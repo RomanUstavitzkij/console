@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import styled from "styled-components"
+import Title from "./components/Title";
+import Flex from "./components/Flex";
+import Console from "./components/Console";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const AppWrapper = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  padding: 2rem;
+  color: white;
+`
+
+const App = () =>{
+    return(
+        <AppWrapper>
+            <Flex justify='center'>
+                <Title color='green'>Consoled 2021. C Roman</Title>
+            </Flex>
+            <Console color='green'/>
+        </AppWrapper>
+    )
 }
-
-export default App;
+export default App
