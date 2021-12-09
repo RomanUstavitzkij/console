@@ -4,10 +4,10 @@ import styled from "styled-components";
 const StyledFlex = styled.div`
 {
   display: flex;
-  justify-content: ${({justify})=>justify || 'stretch'};
-  align-items: ${({align})=>align || 'stretch'};;
-  flex-direction: ${({direction})=>direction || 'row'};
-  margin: ${({margin})=>margin || '0'};
+  justify-content: ${({justify}) => justify || 'stretch'};
+  align-items: ${({align}) => align || 'stretch'};;
+  flex-direction: ${({direction}) => direction || 'row'};
+  margin: ${({margin}) => margin || '0'};
 }
 `
 
